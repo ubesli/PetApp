@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.blackeagle.joker.a">
+
+    <item
+        android:id="@+id/konusmayısil"
+        android:title="Konuşmayı Sil" />
+</menu>

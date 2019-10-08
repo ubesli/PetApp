@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Anamenu"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageButton
+        android:id="@+id/btnprofil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_column="4"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="3dp"
+        android:layout_row="1"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:onClick="profil"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btnvetbul"
+        app:layout_constraintEnd_toStartOf="@+id/btnkayip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:srcCompat="@drawable/petapp_profilim" />
+
+    <ImageButton
+        android:id="@+id/chatbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_column="1"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_row="2"
+        android:background="@android:color/white"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btncikis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btncikis"
+        app:srcCompat="@drawable/msg" />
+
+    <ImageButton
+        android:id="@+id/btnvetbul"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btnprofil"
+        android:layout_column="3"
+        android:layout_marginBottom="4dp"
+        android:layout_row="0"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btncikis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnprofil"
+        app:layout_constraintTop_toBottomOf="@+id/btnprofil"
+        app:srcCompat="@drawable/vet" />
+
+    <ImageButton
+        android:id="@+id/btnsahiplen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/chatbutton"
+        android:layout_alignParentStart="true"
+        android:layout_column="3"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_row="0"
+        android:onClick="sahiplen"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btncikis"
+        app:layout_constraintEnd_toEndOf="@+id/chatbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnkayip"
+        app:srcCompat="@drawable/petapp_sahiplen" />
+
+    <ImageButton
+        android:id="@+id/btnkayip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_column="3"
+        android:layout_marginEnd="7dp"
+        android:layout_row="2"
+        android:onClick="kayipilanları"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/btnvetbul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnprofil"
+        app:layout_constraintTop_toTopOf="@+id/btnprofil"
+        app:srcCompat="@drawable/petapp_kayip" />
+
+    <ImageButton
+        android:id="@+id/btncikis"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="2dp"
+        android:onClick="cikis"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chatbutton"
+        app:layout_constraintTop_toBottomOf="@+id/btnvetbul"
+        app:srcCompat="@drawable/petapp_cikisyap" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="#6adfd4"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnprofil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Ana Menü"
+
+
+        android:layout_marginBottom="4dp"
+
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:titleMarginStart="60dp"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.blackeagle.joker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/msgicon"
+        android:label="Patisev"
+        android:roundIcon="@drawable/msgicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Kayit"
+            android:label="Yeni Kayıt Oluştur" />
+        <activity
+            android:name=".Anamenu"
+            android:label="Ana menü" />
+        <activity
+            android:name=".Profil"
+            android:label="Profilim" />
+        <activity
+            android:name=".Sahiplenme"
+            android:label="Sahiplendirme İlanları" />
+        <activity
+            android:name=".Kayiplar"
+            android:label="Kayıp İlanları" />
+        <activity
+            android:name=".Dostlarim"
+            android:label="Evcil Hayvanlarım " />
+        <activity
+            android:name=".EditProfile"
+            android:label="Profili Düzenle" />
+        <activity
+            android:name=".PPYukle"
+            android:label="Profil Fotoğrafı Yükle" />
+        <activity
+            android:name=".DostEkle"
+            android:label="Evcil Hayvan Ekle" />
+        <activity
+            android:name=".Pet_ilan"
+            android:label="İlan ver" />
+        <activity
+            android:name=".KayipGoruntule"
+            android:label="İlan bilgileri" />
+        <activity
+            android:name=".SahipProfiliniGor"
+            android:label="İlan Sahibi" />
+        <activity
+            android:name=".Veterinerler"
+            android:label="Veterinerler" />
+        <activity
+            android:name=".VetGoruntule"
+            android:label="Veteriner Bilgileri" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".Kayiplar"></activity>
+        <activity android:name=".ChatList"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "106812369769",
+    "firebase_url": "https://joker-dcde9.firebaseio.com",
+    "project_id": "joker-dcde9",
+    "storage_bucket": "joker-dcde9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106812369769:android:15762e8bc80e73a5",
+        "android_client_info": {
+          "package_name": "com.example.blackeagle.joker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106812369769-vojkmivqf5e8ncrjs59qctct5o39qk3s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blackeagle.joker",
+            "certificate_hash": "9c0a2cb8c26c7bd30fa9dacdb26630bbe03a6906"
+          }
+        },
+        {
+          "client_id": "106812369769-n8l1q3dvhkm5bq66f59joe1u7jhpom8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwGaExGYG5X_91S8Ssfy-dbTl3UNO9u7k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106812369769-n8l1q3dvhkm5bq66f59joe1u7jhpom8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
